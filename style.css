@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -22,7 +26,7 @@ header{
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 500;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -175,6 +179,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -419,9 +424,9 @@ header{
 .sessao-contato{
     width: 100%;
     height: 100vh;
-    background: #bc4e9c;
-    background: -webkit-linear-gradient(20deg, #f80759, #bc4e9c);
-    background: linear-gradient(20deg, #f80759, #bc4e9c); 
+    background: #1D2B64;
+    background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);
+    background: linear-gradient(to top, #F8CDDA, #1D2B64);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -510,4 +515,124 @@ header{
     height: 2rem;
     margin-top: 1rem;
 }
+
+#trabalhos-section{
+    text-align: center;
+    padding-top: 50px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(20deg, #f80759, #bc4e9c);
+    background: linear-gradient(20deg, #f80759, #bc4e9c); 
+}
+
+#trabalhos-section h2{
+    color: white;
+    font-family: "Akaya Telivigala";
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#trabalhos-section p{
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Mulish";
+    
+}
+
+#trabalhos-section a{
+    font-weight: bold;
+    color: #3ada62;
+}
+
+.trabalhos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trabalhos-box{
+    flex: 1 1 200px;
+    margin-left: 25;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    border-radius: .5rem;
+    border-right: 2px solid #30c756;
+    border-bottom: 2px solid #30c756;
+    
+}
+
+.proj1{
+    background-image: url('../img/proj1.jpg');
+}
+
+.proj2{
+    background-image: url('../img/proj2.jpg');
+}
+
+.proj3{
+    background-image: url('../img/proj3.jpg');
+}
+
+.proj4{
+    background-image: url('../img/proj4.jpg');
+}
+
+.proj5{
+    background-image: url('../img/proj5.jpg');
+}
+
+.proj6{
+    background-image: url('../img/proj6.jpg');
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: "Mulish";
+    color: #a7a7a7;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background:linear-gradient(45deg, #8e2de2, #4a00ea);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000009;
+}
+
 
