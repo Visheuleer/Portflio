@@ -10,7 +10,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
             "Email: ".$email."\n".
             "Mensagem: ".$mensagem;
 
-    $header = "From: jonas@github.io"."\r\n"."Replay-To: ".$email."\e\n"."X=Mailer:PHP/".phpversion();
+    $header = "From: jonas@000webhostapp.com"."\r\n"."Replay-To: ".$email."\e\n"."X=Mailer:PHP/".phpversion();
     
 if(mail($to, $subject, $body, $header)){
     echo("Email foi enviado com sucesso");
