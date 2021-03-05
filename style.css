@@ -218,7 +218,6 @@ header{
 }
 
 .social-media i{
-    background-color: rgb(224, 77, 51);
     color: white;
     height: 2.5rem;
     width: 2.5rem;
@@ -230,8 +229,19 @@ header{
     transition: background-color 1s;
 }
 
-.social-media i:hover{
-    background-color: rgb(240, 30, 35);
+.social-media a #whatsapp:hover{
+    background-color: #30c756;
+    transition: color .8s;
+}
+
+.social-media a #twitter:hover{
+    background-color: #3f5bd6;
+    transition: color .8s;
+}
+
+.social-media a #git-hub:hover{
+    background-color: #a228c0;
+    transition: color .8s;
 }
 
 
@@ -618,6 +628,21 @@ footer{
 
 .social-list ul{
     display: flex;
+}
+
+.social-list a #whatsapp:hover{
+    color: #30c756;
+    transition: color .8s;
+}
+
+.social-list a #twitter:hover{
+    color: #3f5bd6;
+    transition: color .8s;
+}
+
+.social-list a #git-hub:hover{
+    color: #a228c0;
+    transition: color .8s;
 }
 
 #topo{
