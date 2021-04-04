@@ -249,7 +249,7 @@ header{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
-    row-gap: .5rem;
+    row-gap: 3rem;
     
 }
 
@@ -283,6 +283,7 @@ header{
 }
 
 .sessao-conhecimentos{
+    height: 100vh;
     background:linear-gradient(45deg, #8e2de2, #4a00ea);
 }
 
@@ -296,9 +297,21 @@ header{
     font-family: "Akaya Telivigala";
     font-size: 3rem;
     color: white;
+    position: relative;
     text-shadow: .1rem .2rem 3px rgba(0, 0, 0, .5);
-    border-bottom: solid 3px #df519c;
     margin-bottom: 1.5rem;
+}
+
+.sessao-header h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: rgb(240,241,104);
+    background: linear-gradient(90deg, rgba(240,241,104,1) 0%, rgba(232,179,104,1) 100%);
 }
 
 .conhecimento-header {
@@ -336,14 +349,12 @@ header{
     object-fit: cover;
     width: 100%;
   }
-.header-alterado h1{
-    border-bottom: solid 3px #0cbb4f;
-}
+
 
   .sessao-projetos{
-    background: #F2994A;  
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  
-    background: linear-gradient(to bottom, #F2C94C, #F2994A); 
+    height: 100vh;
+    background: rgb(99,90,255);
+    background: linear-gradient(to bottom, rgba(99,90,255,1) 0%, rgba(0,212,255,1) 100%);
   }
   
   .projetos{
@@ -352,8 +363,9 @@ header{
   }
 
   .card{
+      margin-top: 10rem;
       width: 18rem;
-      height: 25rem;
+      height: 28rem;
       position: relative;
   }
 
@@ -418,6 +430,14 @@ header{
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.btn a{
+    color: white;
+}
+
+.btn a:hover{
+    opacity: .8;
 }
 
 .card-info button{
@@ -538,7 +558,19 @@ header{
     color: white;
     font-family: "Akaya Telivigala";
     font-size: 3rem;
+    position: relative;
     margin-bottom: 30px;
+}
+
+#trabalhos-section h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    bottom: 3px;
+    border-radius: 8px;
+    background: rgb(240,241,104);
+    background: linear-gradient(90deg, rgba(240,241,104,1) 0%, rgba(232,179,104,1) 100%);
 }
 
 #trabalhos-section p{
@@ -599,6 +631,7 @@ header{
 .proj6{
     background-image: url('../img/proj6.jpg');
 }
+
 
 footer{
     width: 100%;

@@ -1,8 +1,8 @@
 <?php
 if(isset($_POST['email']) && !empty($_POST['email'])){
-    $nome = addslashes($_POST['nome']);
+    $nome = addslashes($_POST['name']);
     $email = addslashes($_POST['email']);
-    $mensagem = addslashes($_POST['mensagem']);
+    $mensagem = addslashes($_POST['msg']);
 
     $to = "jonaseuler98@gmail.com";
     $subject = "Contato - Portfólio";
